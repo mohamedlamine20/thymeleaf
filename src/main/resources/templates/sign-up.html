@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style>
+    .section{
+        display: flex;
+    }
+    .content{
+        justify-content: flex-start;
+        justify-items: center;
+        flex-direction: column;
+    }
+    label{
+        display: inline-block;
+        float: left;
+        clear: left;
+        width: 100%;
+        text-align: left;
+    }
+    input {
+        display: inline-block;
+        float: left;
+    }
+  </style>
+</head>
+<body>
+<div class="section">
+
+
+    <form class="content" action="#" th:action="@{/signup-submit}" th:object="${user}" method="post" >
+      <p>
+
+        <label>email</label>
+        <input  type="text" name="email">
+      </p>
+      <p>
+        <label>
+          password
+        </label>
+
+        <input type="text" name="password">
+
+      </p>
+      <p>
+        <input type="submit" value="Submit">
+      </p>
+
+
+
+    </form>
+
+
+
+
+</div>
+
+</body>
+</html>
